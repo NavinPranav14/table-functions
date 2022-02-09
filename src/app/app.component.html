@@ -15,14 +15,14 @@
 <div>
 <table>
     <tr>
-        <th>ID</th>
-        <th>TITLE</th>
-        <th>COMPLETED</th>
+        <th class="id">ID</th>
+        <th class="title">TITLE</th>
+        <th class="complete">COMPLETED</th>
     </tr>
     <tr *ngFor="let eachPost of posts">
-      <td>{{eachPost.id}}</td>
-      <td>{{eachPost.title}}</td>
-      <td [ngClass]="{'red' : eachPost.completed == false, 'green':  eachPost.completed == true}">{{eachPost.completed}}</td>
+      <td class="id">{{eachPost.id}}</td>
+      <td class="title">{{eachPost.title}}</td>
+      <td class="complete" [ngClass]="{'red' : eachPost.completed == false, 'green':  eachPost.completed == true}">{{eachPost.completed}}</td>
 
       <!-- <td [ngClass]="{change: {{ eachPost.completed }} == true}"> {{ eachPost.completed }} </td> -->
     </tr>
