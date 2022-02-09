@@ -1,0 +1,30 @@
+<app-transfer></app-transfer>
+<!-- <div önload="getPosts"></div> -->
+{{ getPosts()}}
+<h1 class="heading">Angular Basics</h1>
+<br><br>
+<div class="change">
+  <div class="alignment">
+    <button class="add">ADD</button>
+    <button class="delete">DELETE</button>
+    <button class="edit">EDIT</button>
+  </div>
+</div>
+<br>
+<br>
+<div>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>TITLE</th>
+        <th>COMPLETED</th>
+    </tr>
+    <tr *ngFor="let eachPost of posts">
+      <td>{{eachPost.id}}</td>
+      <td>{{eachPost.title}}</td>
+      <td [ngClass]="{'red' : eachPost.completed == false, 'green':  eachPost.completed == true}">{{eachPost.completed}}</td>
+
+      <!-- <td [ngClass]="{change: {{ eachPost.completed }} == true}"> {{ eachPost.completed }} </td> -->
+    </tr>
+  </table>
+</div>

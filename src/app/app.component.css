@@ -1,0 +1,87 @@
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  .Id{
+    width: 10px;
+  }
+  td, th {
+    width: 4rem;
+    height: 2rem;
+    border: 10px solid white;
+    text-align: left;
+    padding: 8px;
+  }
+  th{
+    background: orange;
+    text-align: center;
+    color: white;
+    font-weight: 1000;
+  }
+  tr {
+    background: lightblue;
+    
+    border-color: white;
+    border: 20px;
+  }
+
+.heading{
+    text-align: center;
+}
+
+.red{
+  background-color: rgb(194, 30, 30);
+  color: white;
+  font-weight: 800;
+  text-align: center;
+}
+
+.green{
+  background-color: green;
+  color: white;
+  font-weight: 800;
+  text-align: center;
+
+}
+
+.change{
+  text-align: center;
+}
+
+.add{
+  margin: 5px 5px;
+  background-color: #00A6FF;
+  border: none;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  color: white;
+  width: 100px;
+  height: 30px;
+  font-weight: 800;
+}
+.delete{
+  margin: 5px 5px;
+  background-color: burlywood;
+  border: none;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  color: white;
+  width: 100px;
+  height: 30px;
+  font-weight: 800;
+}
+.edit{
+  margin: 5px 5px;
+  background-color: gray;
+  border: none;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  color: white;
+  width: 100px;
+  height: 30px;
+  font-weight: 800;
+}
